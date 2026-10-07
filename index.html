@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dereddi Pradyumna Reddy | Computer Science & Engineering</title>
+
+    <meta name="description"
+          content="Portfolio of Dereddi Pradyumna Reddy, B.Tech. Computer Science and Engineering student at GITAM University.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background: #f7f9fc;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #0b1f3a;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #7db7ff;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            background: white;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: #0b1f3a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #173b69;
+        }
+
+        .btn-secondary {
+            border: 1px solid #0b1f3a;
+            color: #0b1f3a;
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: #eef4fb;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 55px 8%;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #0b1f3a;
+            margin-bottom: 25px;
+        }
+
+        .about {
+            background: #f7f9fc;
+        }
+
+        .about p {
+            max-width: 850px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Cards */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+        }
+
+        .card h3 {
+            color: #0b1f3a;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .card a {
+            color: #145da0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Education */
+
+        .education {
+            background: white;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item h3 {
+            color: #0b1f3a;
+            margin-bottom: 4px;
+        }
+
+        .education-item p {
+            color: #555;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #e8f0f8;
+            color: #0b1f3a;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #9ec9ff;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 55px 7%;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero h2 {
+                font-size: 19px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Pradyumna Reddy
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li>
+                <a href="https://github.com/pradyumnacse"
+                   target="_blank">
+                    GitHub
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <h1>Dereddi Pradyumna Reddy</h1>
+
+            <h2>
+                B.Tech. Computer Science & Engineering
+            </h2>
+
+            <p>
+                Undergraduate student at GITAM (Deemed to be University),
+                with a strong academic background and interests in
+                Artificial Intelligence, Machine Learning and Computer Science.
+            </p>
+
+            <div class="buttons">
+
+                <a href="resume.html"
+                   class="btn btn-primary">
+                    View Resume
+                </a>
+
+                <a href="assets/files/Pradyumna_Reddy_Resume.pdf"
+                   class="btn btn-secondary"
+                   target="_blank">
+                    Download Resume
+                </a>
+
+                <a href="projects.html"
+                   class="btn btn-secondary">
+                    View Projects
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+
+    <section class="about">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p>
+            I am a Computer Science and Engineering undergraduate at
+            GITAM (Deemed to be University), currently pursuing my
+            B.Tech. degree. I am interested in Artificial Intelligence,
+            Machine Learning and software development, and I am
+            continuously developing my programming and problem-solving
+            skills through academic and personal projects.
+        </p>
+
+    </section>
+
+
+    <!-- Education -->
+
+    <section class="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education-item">
+
+            <h3>
+                GITAM (Deemed to be University)
+            </h3>
+
+            <p>
+                B.Tech. – Computer Science & Engineering
+            </p>
+
+            <p>
+                2025 – 2029 | Semester 3 |
+                <strong>CGPA: 9.82 / 10</strong>
+            </p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <h3>
+                DALTON Junior College
+            </h3>
+
+            <p>
+                Intermediate | 2023 – 2025 |
+                <strong>95.9%</strong>
+            </p>
+
+        </div>
+
+
+        <div class="education-item">
+
+            <h3>
+                ETASI Timpany Senior Secondary School
+            </h3>
+
+            <p>
+                CBSE Class X | 2023 |
+                <strong>90%</strong>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+
+    <section>
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <div class="skills">
+
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">Java</span>
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Artificial Intelligence</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Main Portfolio Sections -->
+
+    <section>
+
+        <h2 class="section-title">
+            Explore
+        </h2>
+
+        <div class="cards">
+
+            <!-- Resume -->
+
+            <div class="card">
+
+                <h3>
+                    Resume
+                </h3>
+
+                <p>
+                    Academic background, technical skills,
+                    experience, achievements and other
+                    professional information.
+                </p>
+
+                <a href="resume.html">
+                    View Resume →
+                </a>
+
+            </div>
+
+
+            <!-- Publications -->
+
+            <div class="card">
+
+                <h3>
+                    Publications
+                </h3>
+
+                <p>
+                    Research papers, conference publications,
+                    presentations, papers, datasets and
+                    related resources.
+                </p>
+
+                <a href="publications.html">
+                    View Publications →
+                </a>
+
+            </div>
+
+
+            <!-- Projects -->
+
+            <div class="card">
+
+                <h3>
+                    Projects
+                </h3>
+
+                <p>
+                    Academic and personal projects, source code,
+                    notebooks, datasets, demonstrations and
+                    technical documentation.
+                </p>
+
+                <a href="projects.html">
+                    View Projects →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GitHub -->
+
+    <section class="about">
+
+        <h2 class="section-title">
+            GitHub
+        </h2>
+
+        <p>
+            Explore my programming projects, source code,
+            notebooks and other technical work on GitHub.
+        </p>
+
+        <br>
+
+        <a href="https://github.com/pradyumnacse"
+           class="btn btn-primary"
+           target="_blank">
+            Visit GitHub
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Dereddi Pradyumna Reddy
+        </p>
+
+        <p>
+            <a href="mailto:dereddi.pradyumna@gmail.com">
+                dereddi.pradyumna@gmail.com
+            </a>
+            &nbsp; | &nbsp;
+            Visakhapatnam, India
+        </p>
+
+    </footer>
+
+</body>
+</html>
