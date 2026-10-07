@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Pradyumna Reddy</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#263238;background:#f5f7fa}
+header{background:#123b5d;color:white;padding:22px 0}
+.container{width:90%;max-width:1050px;margin:auto}
+.header-content{display:flex;justify-content:space-between;align-items:center;gap:20px}
+header h1{font-size:1.8rem}
+nav{display:flex;flex-wrap:wrap;gap:18px}
+nav a{color:white;text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline}
+main{padding:45px 0}
+.page-title{text-align:center;margin-bottom:35px}
+.page-title h2{color:#123b5d;font-size:2rem;margin-bottom:8px}
+.page-title p{color:#607d8b}
+.project-card{background:white;border-radius:10px;padding:28px;margin-bottom:28px;box-shadow:0 3px 12px rgba(0,0,0,.08);border-left:5px solid #123b5d}
+.project-card h3{color:#123b5d;font-size:1.35rem;margin-bottom:12px}
+.project-card h4{color:#37474f;margin-top:18px;margin-bottom:6px}
+.project-card p{margin-bottom:10px}
+.project-card ul{margin:8px 0 0 22px}
+.project-card li{margin-bottom:6px}
+.tags{margin:14px 0}
+.tag{display:inline-block;background:#e8f0f6;color:#123b5d;padding:5px 10px;margin:3px 4px 3px 0;border-radius:15px;font-size:.88rem}
+.links{margin-top:18px}
+.links a{display:inline-block;margin-right:14px;margin-bottom:8px;color:#0b5c8e;font-weight:600;text-decoration:none}
+.links a:hover{text-decoration:underline}
+footer{text-align:center;color:#607d8b;padding:25px 0 35px;font-size:.9rem}
+@media(max-width:700px){.header-content{flex-direction:column;align-items:flex-start}nav{gap:12px}.project-card{padding:22px}}
+</style>
+</head>
+<body>
+<header><div class="container header-content">
+<h1>Pradyumna Reddy</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="resume.html">Resume</a>
+<a href="publications.html">Publications</a>
+<a href="projects.html">Projects</a>
+<a href="https://github.com/pdereddi" target="_blank">GitHub</a>
+</nav>
+</div></header>
+
+<main class="container">
+<div class="page-title"><h2>Projects</h2><p>Selected machine learning and data science projects</p></div>
+
+<section class="project-card">
+<h3>1. Crypto Address Type Classification: A Comparative Machine Learning Study</h3>
+<p>A comparative study of eight classical machine-learning classifiers for identifying cryptocurrency address types from engineered text features, using a 25,000-record synthetic research dataset.</p>
+<h4>Problem Addressed</h4>
+<p>The project investigates whether cryptocurrency wallet addresses can be identified from free-text data for applications such as fraud/scam detection and compliance.</p>
+<h4>Technologies</h4>
+<div class="tags">
+<span class="tag">Python</span><span class="tag">Jupyter Notebook</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+</div>
+<h4>Implementation</h4>
+<ul>
+<li>Engineered text and cryptocurrency address pattern features.</li>
+<li>Compared SVM, Logistic Regression, Decision Tree, K-NN, Naive Bayes, MLP, AdaBoost and Random Forest.</li>
+<li>Used stratified train/validation splitting and evaluated accuracy, precision, recall and F1.</li>
+<li>Included experiments involving a custom Random Forest with Cuckoo Hashing and an ensemble K-NN extension.</li>
+</ul>
+<div class="links">
+<a href="crypto_classification_analysis/README.md">README</a>
+<a href="crypto_classification_analysis/crypto_classification_analysis.ipynb">Notebook</a>
+<a href="crypto_classification_analysis/crypto_detection_research_dataset.csv">Dataset</a>
+</div>
+</section>
+
+<section class="project-card">
+<h3>2. Employee Salary Level Classification: A Comparative Machine Learning Study</h3>
+<p>A comparative machine-learning study predicting employee salary levels from HR attributes and evaluating six classification algorithms using 10-fold stratified cross-validation on a 14,999-record dataset.</p>
+<h4>Problem Addressed</h4>
+<p>The project explores whether workforce attributes such as satisfaction, evaluation score, project count, monthly hours, tenure and department can be used to predict salary level and investigate compensation patterns.</p>
+<h4>Technologies</h4>
+<div class="tags">
+<span class="tag">Python</span><span class="tag">Jupyter Notebook</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span>
+</div>
+<h4>Implementation</h4>
+<ul>
+<li>Performed exploratory analysis of salary-level classes and HR attributes.</li>
+<li>Built preprocessing pipelines using StandardScaler, OneHotEncoder and ColumnTransformer.</li>
+<li>Compared Logistic Regression, Naive Bayes, K-NN, SVM, Decision Tree and MLP classifiers.</li>
+<li>Used 10-fold stratified cross-validation with accuracy, weighted precision/recall/F1 and macro F1.</li>
+<li>Investigated implementation and cross-validation issues during model development.</li>
+</ul>
+<h4>Key Result</h4>
+<p>The Decision Tree achieved approximately 61% accuracy in the reported run. The study also identified class imbalance and duplicate records as important considerations when interpreting the results.</p>
+<div class="links">
+<a href="employee_productivity_prediction/README.md">README</a>
+<a href="employee_productivity_prediction/employee_analysis_1.ipynb">Notebook</a>
+<a href="employee_productivity_prediction/employees.csv">Dataset</a>
+</div>
+</section>
+
+<section class="project-card">
+<h3>3. Flexural Strength Prediction of Fiber-Reinforced Concrete Using Regression Models</h3>
+<p>A scikit-learn regression project that predicts the flexural strength of fiber-reinforced concrete from mix-design parameters, comparing up to 19 regression algorithms on a 278-sample dataset.</p>
+<h4>Problem Addressed</h4>
+<p>Measuring flexural strength requires casting and testing concrete specimens, which can be slow and costly. Predictive modeling can help estimate strength from mix composition and reduce trial batches.</p>
+<h4>Technologies</h4>
+<div class="tags">
+<span class="tag">Python</span><span class="tag">Jupyter Notebook</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Scikit-learn</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">XGBoost</span><span class="tag">CatBoost</span><span class="tag">LightGBM</span>
+</div>
+<h4>Implementation</h4>
+<ul>
+<li>Prepared 12 input features and one target variable and performed an 80/20 train/test split.</li>
+<li>Compared linear, regularized, robust, tree-based, ensemble, boosting, SVR, K-NN, MLP, Gaussian Process and polynomial regressors.</li>
+<li>Used StandardScaler pipelines for scale-sensitive models.</li>
+<li>Tuned 14 models with 5-fold GridSearchCV using negative MSE.</li>
+<li>Evaluated models using test-set MSE and R² and visualized true-versus-predicted values.</li>
+</ul>
+<h4>Key Result</h4>
+<p>In the reported test run, Extra Trees and Gradient Boosting each achieved approximately R² = 0.92 with MSE around 0.58. Gaussian Process and Random Forest followed at approximately R² = 0.89 and 0.88, respectively. The reported run excluded XGBoost, CatBoost and LightGBM.</p>
+<div class="links">
+<a href="flexural_strength_prediction/README.md">README</a>
+<a href="flexural_strength_prediction/flexural_strength_prediction.ipynb">Notebook</a>
+<a href="flexural_strength_prediction/flexural_strength.csv">Dataset</a>
+</div>
+</section>
+</main>
+
+<footer><div class="container">&copy; 2026 Pradyumna Reddy</div></footer>
+</body>
+</html>
